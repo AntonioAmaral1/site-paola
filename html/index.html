@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paola, meu amor</title>
+    <link rel="stylesheet"  href="../css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="../images/coracao.webp">
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+
+            <header>
+                <nav class="cabecalho">
+                    <span class="titulo"><a href="index.html">Olá meu amor!</a></span>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">Nossa história</a></li>
+                        <li><a href="future.html">Nosso futuro</a></li>
+                    </ul>
+        
+                    <button onclick="animarMenu()" class="btn-menu" id="btn-menu">
+                        <span class="linha"></span>
+                        <span class="linha"></span>
+                        <span class="linha"></span>
+                    </button>
+        
+                    <ul class="menu-mobile" id="menu-mobile">
+                        <nav>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="history.html">Nossa história</a></li>
+                            <li><a href="future.html">Nosso futuro</a></li>
+                        </nav>
+                    </ul>
+                </nav>
+            </header>
+        
+            <main>
+                <div class="principal">
+                    <section class="texto">
+                        <div class="texto-conteudo">
+                            <h1>Feliz dia das Mulheres!</h1>
+                            <hr/>
+                            <h2 class="texto-subtitulo">Bem-vinda ao seu site! Aqui, cada página conta um pedacinho da nossa história, nossos momentos e nossos sonhos para o futuro. Esse site é um presente para lembrar o quanto você é especial para mim. 💖</h2>
+
+                        </div>
+        
+                        <section>
+                            <div class="texto-imagem">
+                                <figure><img src="../images/home.jpeg"/></figure>
+                            </div>
+                        </section>
+                        
+                    </section>
+                   
+                </div>
+        
+            </main>
+        </div>
+    
+        <footer id="footer">
+            <p class="rodape-texto">Feito com amor para você, Paola</p>
+        </footer>
+    </div>
+
+    <script>
+        const menuDiv = document.getElementById('menu-mobile')
+        const btnAnimar = document.getElementById('btn-menu')
+            
+        menuDiv.addEventListener('click', animarMenu)
+
+        function animarMenu() {
+            menuDiv.classList.toggle('abrir')
+            btnAnimar.classList.toggle('ativo')
+        }
+    </script>
+</body>
+</html>

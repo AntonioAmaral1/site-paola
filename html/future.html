@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paola, meu amor</title>
+    <link rel="stylesheet"  href="../css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="../images/coracao.webp">
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <nav class="cabecalho">
+                    <span class="titulo"><a href="index.html">Olá meu amor!</a></span>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">Nossa história</a></li>
+                        <li><a href="future.html">Nosso futuro</a></li>
+                    </ul>
+        
+                    <button onclick="animarMenu()" class="btn-menu" id="btn-menu">
+                        <span class="linha"></span>
+                        <span class="linha"></span>
+                        <span class="linha"></span>
+                    </button>
+        
+                    <ul class="menu-mobile" id="menu-mobile">
+                        <nav>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="history.html">Nossa história</a></li>
+                            <li><a href="future.html">Nosso futuro</a></li>
+                        </nav>
+                    </ul>
+                </nav>
+            </header>
+        
+            <main>
+                <section class="intro">
+                    <h1>O futuro é nosso para escrever juntos ✨</h1>
+                    <p>Com cada dia, cada sorriso e cada sonho compartilhado, estamos construindo a nossa história.</p>
+                </section>
+
+                <section class="musica">
+                    <div class="musica-conteudo">
+                        <h3>Mais uma de nossas músicas 🎵</h3>
+                        <audio loop>
+                            <source src="../music/Stand By Me.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+            
+                        <button onclick="tocarOuPausarMusica()">Tocar Música</button>
+                </section>
+        
+                <section class="planos">
+                    <div class="plano">
+                        <img src="../images/italia.jpg" alt="Casal viajando">
+                        <div class="texto-plano">
+                            <h2>Viajar para a Italia ✈️</h2>
+                            <p>Para comemorar nosso casamento e lua de mel!</p>
+                        </div>
+                    </div>
+        
+                    <div class="plano">
+                        <img src="../images/casa.jpg" alt="Casa dos sonhos">
+                        <div class="texto-plano">
+                            <h2>Nosso Lar 🏡</h2>
+                            <p>Um lugar com a nossa cara, aconchegante <s>e alguns bichos</s>.</p>
+                        </div>
+                    </div>
+        
+                    <div class="plano">
+                        <img src="../images/foto idosos.jpeg">
+                        <div class="texto-plano">
+                            <h2>Nosso Futuro Juntos ❤️</h2>
+                            <p>Criar novas tradições, momentos especiais e viver com muito amor!</p>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="carta">
+                    <h2>Carta para o Futuro 💌</h2>
+                    <p>
+                        Olá meu amor.
+                        <br/>
+                        Quando estiver lendo isso, espero que já tenhamos viajado muito e aproveitado a vida de casal, rindo e brincando bastante. Também espero que já estejamos com filhos brincando pela nossa casa com os nossos bichos (Dom, Charlotte, um Golden e quem sabe um tucano kkk).
+                        <br/> 
+                        Este presente que lhe fiz foi uma homenagem para demonstrar o meu amor, como já demonstro todos os dias para você. Espero que esteja bem, com saúde, que não se estresse muito comigo <s>isso eu duvido muito kkk</s>. Mas sempre saiba que, na saúde e na doença, na riqueza e na pobreza, estarei junto com você. E o que importa é que estamos juntos nessa jornada.
+                        <br/>
+                        Te amo, hoje, amanhã e sempre!
+                        <br/>
+                        P.S: Eu ainda espero você dormir primeiro para depois ir também. Beijos, Te amo para sempre! ❤️
+                    </p>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer id="footer">
+        <p class="rodape-texto">Não importa onde o futuro nos leve, enquanto estivermos juntos, será sempre perfeito! 💖</p>
+    </footer>
+
+    <script>
+        function tocarOuPausarMusica() {
+            const musica = document.querySelector('audio')
+            musica.paused ? musica.play() : musica.pause()
+        }
+
+        const menuDiv = document.getElementById('menu-mobile')
+        const btnAnimar = document.getElementById('btn-menu')
+            
+        menuDiv.addEventListener('click', animarMenu)
+
+        function animarMenu() {
+            menuDiv.classList.toggle('abrir')
+            btnAnimar.classList.toggle('ativo')
+        }
+    </script>
+    
+</body>
+</html>
